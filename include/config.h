@@ -119,4 +119,9 @@ enum CommMethod {
 // Serial Communication
 #define SERIAL_BAUD_RATE     115200
 
+// Git Versioning Fallback (Overridden dynamically by PlatformIO build flags)
+#ifndef GIT_VERSION
+#define GIT_VERSION "v1.0.0-manual"
+#endif
+
 #endif // CONFIG_H

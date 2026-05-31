@@ -126,6 +126,7 @@ void setup() {
     Serial.begin(SERIAL_BAUD_RATE);
     delay(500); // Settle Serial terminal output
     
+    Serial.printf("\n[System] ESP32 SQM Station - Firmware Version: %s\n", GIT_VERSION);
     rtc_bootCount++;
     
     // Configure USER button and Eclipse Mode Switch
@@ -734,6 +735,7 @@ void runSetupMode() {
 
                 display.setCursor(0, 0);
                 display.println("--- SYSTEM STATUS ---");
+                display.printf("Ver: %s\n", GIT_VERSION);
 #ifdef ENABLE_INA3221
                 display.printf("Batt V: %.2f V\n", (float)battMv / 1000.0f);
 #else
