@@ -1,0 +1,19 @@
+# PlatformIO local build folder
+.pio
+.pioenvs
+.piolibdeps
+
+# VS Code project files
+.vscode/
+
+# Compiled object files
+*.o
+*.obj
+*.a
+*.lib
+
+# Temporary files
+*~
+*.swp
+*.tmp
+*.log
